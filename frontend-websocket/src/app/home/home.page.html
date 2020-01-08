@@ -7,7 +7,27 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding" *ngFor="let c of cosa">
-    <p>{{ c }}</p>
-  </div>
+  <ion-row>
+    <ion-col size="6">
+      <p> ID Usuario: {{ usuario.idUsuario }}</p>
+      <ion-input placeholder="Nombre de Usuario"></ion-input>
+      <ion-button (click)="registerUser()">Registrar Usuario</ion-button>
+
+    </ion-col>
+    
+    <ion-col size="6">
+      <div class="message_box">
+        <div class="ion-text-end" *ngIf="usuario.idUsuario == ">
+          <p class="me">{{  }}</p>
+        </div>
+        <div class="ion-text-start" >
+          <p class="another-user">Mensaje de Emiliano</p>
+        </div>
+        <div class="sendArea">
+          <ion-input class="inputMessage" placeholder="Mensaje" [(ngModel)]="message"></ion-input>
+         <ion-icon name="send" class="btnSend ion-float-right" (click)="sendMessageAndNotification()"></ion-icon>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
 </ion-content>

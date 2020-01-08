@@ -1,1 +1,60 @@
 
+.message_box {
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.me {
+    text-align: right;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#69bb7b ;
+    color: white;
+}
+
+.another-user {
+
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#69bb7b ;
+    color: white;
+}
+
+.prueba {
+    width: auto;
+}
+
+.sendArea {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 13px;
+}
+.inputMessage {
+
+    width: 85%;
+    border: 1px solid #ccc;
+}
+
+.btnSend {
+    margin-right: 56px;
+    margin-top: -36px;
+    color: green;
+    font-size: 14px;
+    border-radius: 15px;
+    /* background: green; */
+    padding: 9px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btnSend:hover {
+    background: green;
+    color: white;
+}
